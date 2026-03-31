@@ -291,6 +291,141 @@ a {
     color: var(--text-color);
 }
 
+/* Talent 頁面專屬設定 */
+.talent-section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px; 
+    text-align: left;
+}
+
+.talent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.talent-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.talent-card:hover {
+    transform: translateY(-10px);
+}
+
+.talent-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 4px solid var(--bg-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.talent-card:hover .talent-img {
+    box-shadow: 0 12px 25px rgba(243, 152, 0, 0.3); /* f39800 */
+}
+
+.talent-name {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--blue-dark);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+/* 個人介紹頁面 (Profile) */
+.talent-profile {
+    max-width: 1000px;
+    margin: 120px auto 60px;
+    padding: 0 5%;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profile-avatar img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 4px solid var(--bg-color);
+}
+
+.profile-name {
+    margin-top: 25px;
+    font-size: 2.5rem;
+    color: var(--blue-dark);
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.profile-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.profile-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.profile-intro p {
+    margin-bottom: 15px;
+}
+
+.profile-data {
+    margin-top: 30px;
+}
+
+.data-title {
+    font-size: 1.8rem;
+    color: var(--blue-dark);
+    margin-bottom: 20px;
+    text-align: center;
+    /* 繼承全域的無襯線字體，移除斜體 */
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.data-table th {
+    width: 100px;
+    color: var(--blue-dark);
+    font-weight: bold;
+}
+
+.data-table tr:first-child th,
+.data-table tr:first-child td {
+    border-top: 1px solid #ddd;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .main-nav {
@@ -337,4 +472,15 @@ a {
     .feature-image {
         width: 100%;
     }
+}
+/* Footer */
+.site-footer {
+    background-color: #333333;
+    color: #d3d3d3;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
