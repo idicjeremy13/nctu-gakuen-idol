@@ -6,73 +6,6 @@
     <title>國立陽明交通大學學園偶像社 - 企鵝</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .profile-container {
-            padding: 150px 5%;
-            text-align: center;
-            min-height: 100vh;
-        }
-        .profile-container img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            border: 4px solid var(--bg-color);
-            margin-bottom: 20px;
-        }
-        .profile-container h1 {
-            font-size: 2.5rem;
-            color: var(--blue-dark);
-            margin-bottom: 20px;
-        }
-        .profile-box {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .intro-text {
-            text-align: left;
-            line-height: 1.8;
-            margin: 30px 0;
-            color: #555;
-            font-size: 1.1rem;
-        }
-        .data-title {
-            font-family: sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 1.5rem;
-            text-align: center;
-            margin: 40px 0 20px;
-            letter-spacing: 2px;
-            color: #333;
-        }
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            margin-top: 20px;
-        }
-        .data-table th, .data-table td {
-            padding: 15px 10px;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
-        }
-        .data-table th {
-            width: 30%;
-            color: #777;
-            font-weight: normal;
-        }
-        .data-table td {
-            color: #333;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <header class="site-header">
@@ -94,39 +27,44 @@
         </button>
     </header>
 
-    <div class="profile-container">
-        <div class="profile-box">
-            <img src="../../images/penguin.png" alt="企鵝">
-            <h1>企鵝</h1>
-            <div class="intro-text">
+    <main class="talent-profile">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="../../images/penguin.png" alt="企鵝">
+            </div>
+            <h1 class="profile-name">企鵝</h1>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-intro">
                 <p>被學偶的阿廣電到後開啟了企鵝的偶像生涯。是位善解人意、喜愛小動物的可愛系偶像學姊。</p>
                 <p>平時喜歡玩學園偶像大師，他從遊戲中學到了服飾搭配技巧，因此時常可見企鵝在社辦穿著可愛偶像衣裝。</p>
                 <p>入社後與阿冬一起成立學園偶像社，目標是讓全世界看見他穿著可愛偶像服的姿態。</p>
             </div>
-            
-            <div class="data-title">DATA</div>
-            
-            <table class="data-table">
-                <tr>
-                    <th>身高</th>
-                    <td>70cm</td>
-                </tr>
-                <tr>
-                    <th>出道日</th>
-                    <td>2025.01.24</td>
-                </tr>
-                <tr>
-                    <th>組合</th>
-                    <td>1期生</td>
-                </tr>
-                <tr>
-                    <th>興趣</th>
-                    <td>玩偶像培育遊戲</td>
-                </tr>
-            </table>
+
+            <div class="profile-data">
+                <h2 class="data-title">DATA</h2>
+                <table class="data-table">
+                    <tr>
+                        <th>身高</th>
+                        <td>70cm</td>
+                    </tr>
+                    <tr>
+                        <th>出道日</th>
+                        <td>2025.01.24</td>
+                    </tr>
+                    <tr>
+                        <th>組合</th>
+                        <td>1期生</td>
+                    </tr>
+                    <tr>
+                        <th>興趣</th>
+                        <td>玩偶像培育遊戲</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    
-        </div>
+    </main>
     <div style="text-align: right; margin-top: 50px; margin-bottom: 50px; padding-right: 5%;"><a href="../talent.html" class="more-link"><span class="arrow-line" style="transform: rotate(180deg); margin-left: 0; margin-right: 15px;"></span>BACK</a></div>
     <script src="../../script.js"></script>
     <footer class="site-footer">
